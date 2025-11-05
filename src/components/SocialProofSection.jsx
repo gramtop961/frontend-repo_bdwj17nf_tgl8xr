@@ -1,4 +1,4 @@
-import { Star, MapPin, Clock, Phone, Facebook, Chrome, MessageSquare, ShieldCheck } from "lucide-react";
+import { Star, MapPin, Clock, Phone, ShieldCheck } from "lucide-react";
 import { useState } from "react";
 
 const reviews = [
@@ -51,7 +51,7 @@ const faqs = [
 const ReviewCard = ({ name, text, rating, source }) => (
   <div className="flex h-full flex-col justify-between rounded-xl border border-slate-200 bg-white p-5">
     <div>
-      <div className="flex items-center gap-1 text-lime-500" aria-label={`${rating} star rating`}>
+      <div className="flex items-center gap-1 text-yellow-400" aria-label={`${rating} star rating`}>
         {Array.from({ length: rating }).map((_, i) => (
           <Star key={i} className="h-4 w-4 fill-current" />
         ))}
@@ -170,14 +170,14 @@ const SocialProofSection = () => {
             <form className="space-y-3">
               <div>
                 <label htmlFor="name" className="sr-only">Name</label>
-                <input id="name" type="text" placeholder="Your name" className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 placeholder-blue-200/80 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-lime-400" />
+                <input id="name" type="text" placeholder="Your name" className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 placeholder-blue-200/80 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-sky-300" />
               </div>
               <div className="grid gap-3 sm:grid-cols-2">
-                <input type="tel" placeholder="Phone" className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 placeholder-blue-200/80 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-lime-400" />
-                <input type="email" placeholder="Email" className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 placeholder-blue-200/80 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-lime-400" />
+                <input type="tel" placeholder="Phone" className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 placeholder-blue-200/80 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-sky-300" />
+                <input type="email" placeholder="Email" className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 placeholder-blue-200/80 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-sky-300" />
               </div>
-              <input type="text" placeholder="Service address / city" className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 placeholder-blue-200/80 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-lime-400" />
-              <select className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-lime-400">
+              <input type="text" placeholder="Service address / city" className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 placeholder-blue-200/80 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-sky-300" />
+              <select className="w-full rounded-md border border-white/20 bg-white/10 px-4 py-2 text-white outline-none ring-1 ring-white/10 focus:ring-2 focus:ring-sky-300">
                 <option className="text-blue-900">Select service</option>
                 <option className="text-blue-900">House Washing</option>
                 <option className="text-blue-900">Driveway & Concrete Cleaning</option>
@@ -186,7 +186,7 @@ const SocialProofSection = () => {
                 <option className="text-blue-900">Commercial Power Washing</option>
                 <option className="text-blue-900">Gutter Brightening + Rust/Stain Removal</option>
               </select>
-              <button type="button" className="w-full rounded-md bg-lime-400 px-4 py-2 font-semibold text-blue-950 shadow-lg shadow-lime-400/20 transition hover:bg-lime-300">
+              <button type="button" className="w-full rounded-md bg-gradient-to-r from-sky-200 to-white px-4 py-2 font-semibold text-blue-950 shadow-lg shadow-sky-200/30 transition hover:from-sky-300 hover:to-white">
                 Request a Free Quote
               </button>
               <div className="text-xs text-blue-200">By submitting, you agree to our terms. We’ll never share your info.</div>

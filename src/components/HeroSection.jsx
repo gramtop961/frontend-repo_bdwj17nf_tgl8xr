@@ -15,18 +15,19 @@ const HeroSection = () => {
           backgroundImage:
             "url('https://images.unsplash.com/photo-1695740633675-d060b607f5c4?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxjZXJhbWljJTIwcG90dGVyeSUyMGhhbmRtYWRlfGVufDB8MHx8fDE3NjIyNjIzMTN8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80')",
         }}
-        aria-hidden="true"
+        role="img"
+        aria-label="Professional pressure washing result on driveway, clean reflective surface"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-blue-950/80 via-blue-950/70 to-blue-950/95" aria-hidden="true" />
 
       {/* Decorative water spray effect */}
-      <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-cyan-300/20 blur-3xl" aria-hidden="true" />
-      <div className="pointer-events-none absolute right-40 top-20 h-40 w-40 rotate-12 rounded-full bg-cyan-200/10 blur-2xl" aria-hidden="true" />
+      <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-sky-300/20 blur-3xl" aria-hidden="true" />
+      <div className="pointer-events-none absolute right-40 top-20 h-40 w-40 rotate-12 rounded-full bg-sky-200/10 blur-2xl" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-7xl px-6 pt-28 pb-10 sm:pt-36">
         <div className="max-w-3xl">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-sm backdrop-blur">
-            <Sparkles className="h-4 w-4 text-lime-400" />
+            <Sparkles className="h-4 w-4 text-sky-300" />
             <span>Serving DC • Maryland • Northern Virginia</span>
           </div>
           <h1 className="font-bold leading-tight tracking-tight text-white drop-shadow-sm md:text-6xl text-4xl">
@@ -39,7 +40,7 @@ const HeroSection = () => {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <button
               onClick={handleQuoteClick}
-              className="rounded-md bg-lime-400 px-6 py-3 font-semibold text-blue-950 shadow-lg shadow-lime-400/20 transition hover:bg-lime-300"
+              className="rounded-md bg-gradient-to-r from-sky-200 to-white px-6 py-3 font-semibold text-blue-950 shadow-lg shadow-sky-200/30 transition hover:from-sky-300 hover:to-white"
               aria-label="Get a Free Quote"
             >
               Get a Free Quote
@@ -53,7 +54,7 @@ const HeroSection = () => {
             </a>
           </div>
 
-          {/* Trust badges */}
+          {/* Trust badges (icons remain green by request) */}
           <div className="mt-8 grid grid-cols-2 gap-3 text-sm text-blue-100 sm:flex sm:flex-wrap sm:gap-4">
             <div className="inline-flex items-center gap-2 rounded-md bg-white/5 px-3 py-2 ring-1 ring-white/10">
               <ShieldCheck className="h-4 w-4 text-lime-400" /> Licensed & Insured

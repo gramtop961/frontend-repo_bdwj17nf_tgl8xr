@@ -81,7 +81,7 @@ const ShowcaseSection = () => {
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
               {reasons.map((r) => (
                 <li key={r} className="flex items-start gap-3 rounded-lg bg-white p-4 ring-1 ring-slate-200">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-lime-500" />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 text-sky-600" />
                   <span className="text-slate-700">{r}</span>
                 </li>
               ))}
