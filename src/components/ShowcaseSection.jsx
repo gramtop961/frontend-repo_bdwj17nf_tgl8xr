@@ -12,7 +12,7 @@ const BeforeAfterSlider = () => {
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div
-          className="absolute inset-0 overflow-hidden"
+          className="absolute inset-0 overflow-hidden transition-[width] duration-200 ease-out"
           style={{ width: `${value}%` }}
         >
           <img
@@ -23,7 +23,7 @@ const BeforeAfterSlider = () => {
         </div>
         {/* Divider */}
         <div
-          className="absolute top-0 h-full w-0.5 bg-white/80"
+          className="absolute top-0 h-full w-0.5 bg-white/80 transition-[left] duration-200 ease-out"
           style={{ left: `${value}%` }}
         />
         {/* Slider */}
@@ -80,7 +80,7 @@ const ShowcaseSection = () => {
             </header>
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
               {reasons.map((r) => (
-                <li key={r} className="flex items-start gap-3 rounded-lg bg-white p-4 ring-1 ring-slate-200">
+                <li key={r} className="flex items-start gap-3 rounded-lg bg-white p-4 ring-1 ring-slate-200 transition hover:shadow-md hover:ring-sky-200/60">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 text-sky-600" />
                   <span className="text-slate-700">{r}</span>
                 </li>

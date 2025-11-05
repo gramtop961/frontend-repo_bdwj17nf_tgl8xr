@@ -8,7 +8,8 @@ function App() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "ProEdge Services",
-    image: "https://images.unsplash.com/photo-1749549437891-dcec46eace83?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxQcm9FZGdlJTIwU2VydmljZXN8ZW58MHwwfHx8MTc2MjM1MzAxN3ww&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80",
+    image:
+      "https://images.unsplash.com/photo-1602101022020-386a2a06b46c?q=80&w=1600&auto=format&fit=crop",
     url: "https://proedgeservices.example.com",
     telephone: "+1-202-555-0123",
     description:
